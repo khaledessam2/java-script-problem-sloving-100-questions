@@ -1,17 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Problem solving</title>
-</head>
-<body>
-    <!-- <script src="./even-odd.js"></script> -->
-    <!-- <script src="./sum_of_positive.js"></script> -->
-    <!-- <script src="./sum-without-highest-and-lowest.js"></script> -->
-    <!-- <script src="./repeat-string.js"></script> -->
-    <!-- <script src="./convert-number-to-reversed-array.js"></script> -->
-    <!-- <script src="./Multiples-of-3-or-5.js"></script> -->
-    <script src="./opposite-number.js"></script>
-</body>
+  </head>
+
+  <body>
+    <script>
+      // Swapping Letters
+      let Swappingcase = "elZERo";
+      let Swapping = Swappingcase.split("")
+        .map((letter) =>
+          letter === letter.toUpperCase()
+            ? letter.toLowerCase()
+            : letter.toUpperCase(),
+        )
+        .join("");
+      console.log(Swappingcase);
+      console.log(Swapping);
+      
+      // convert Element in Array
+      let invertedNumber = [1, -10, -20, 15, 100, -30];
+      let newArray = invertedNumber.map((element) => -element);
+      console.log(invertedNumber);
+      console.log(newArray);
+
+      // prevent Letters
+      let ignoreNumber = "Elz123er4o";
+      let number = ignoreNumber.split("").map((element)=> {
+        if (isNaN(element)) {
+          return element;
+        }
+        return "";
+      }
+    ).join("")
+    console.log(ignoreNumber)
+    console.log(number)
+    
+    </script>
+  </body>
 </html>

@@ -32,3 +32,6 @@ function sumNumber3(array){
 }
 
 console.log(sumNumber3([6,2,1,1,8,10,10])) ;
+
+
+console.log(Math.max(...[10 , 20 ,30])) ;
